@@ -74,6 +74,88 @@ section h3 {
   margin-bottom: 8px;
 }
 
+/* Nueva sección: participantes dentro de la tarjeta de actividad */
+.activity-card .participants-title {
+  margin-top: 10px;
+  font-weight: 700;
+  color: #1a237e;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Lista sin viñetas tradicionales; cada ítem es una fila con avatar y nombre */
+.activity-card .participants-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.activity-card .participant-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #eef0f6;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.03);
+}
+
+/* Avatar circular con iniciales (si no hay imagen) */
+.activity-card .participant-avatar {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3949ab, #1a237e);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(26, 35, 126, 0.12);
+}
+
+/* Nombre y metadatos del participante */
+.activity-card .participant-name {
+  color: #263238;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Texto más claro para información secundaria */
+.activity-card .participant-meta {
+  color: #657786;
+  font-size: 12px;
+  margin-left: auto;
+}
+
+/* Estado cuando no hay participantes */
+.activity-card .participant-empty {
+  color: #777;
+  font-style: italic;
+  font-size: 13px;
+  padding: 8px;
+}
+
+/* Ajustes responsivos para avatares más pequeños en pantallas estrechas */
+@media (max-width: 480px) {
+  .activity-card .participant-avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .activity-card .participant-name {
+    font-size: 13px;
+  }
+}
+
 .form-group {
   margin-bottom: 15px;
 }
