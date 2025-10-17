@@ -87,7 +87,7 @@ section h3 {
 
 /* Lista sin viñetas tradicionales; cada ítem es una fila con avatar y nombre */
 .activity-card .participants-list {
-  list-style: none;
+  list-style: none; /* hide bullets */
   padding: 0;
   margin: 8px 0 0 0;
   display: flex;
@@ -104,6 +104,25 @@ section h3 {
   background-color: #ffffff;
   border: 1px solid #eef0f6;
   box-shadow: 0 1px 2px rgba(16, 24, 40, 0.03);
+}
+
+/* Delete button next to each participant */
+.participant-delete {
+  margin-left: 12px;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: 700;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.participant-delete:hover {
+  background: rgba(198,40,40,0.08);
 }
 
 /* Avatar circular con iniciales (si no hay imagen) */
